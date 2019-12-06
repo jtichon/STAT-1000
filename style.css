@@ -12,3 +12,7 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+div.definition{
+  border: 1px solid green;
+}

@@ -1,0 +1,126 @@
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{mathrsfs}
+\usepackage{enumerate,calc}
+\usepackage{pdfpages}
+\usepackage{amsthm}
+\usepackage{centernot}
+\usepackage[margin=1in]{geometry}
+\usepackage{tcolorbox}
+\usepackage{parskip}
+\usepackage{color}
+\usepackage{subfig}
+\usepackage[subfigure]{tocloft}
+\usepackage{floatflt}
+
+\theoremstyle{remark}
+
+\newcommand{\varmean}{\ensuremath \dfrac{\sigma}{\sqrt{n}}}
+\newcommand{\tvarmean}{\ensuremath \dfrac{s}{\sqrt{n}}}
+\newcommand{\varbinom}{\ensuremath \sqrt{npq}}
+\newcommand{\ada}{\ensuremath ~\dot{\sim}~}
+\renewcommand{\bar}[1]{\ensuremath \overline{#1}}
+\newcommand{\red}[1]{\textcolor{RubineRed}{#1}}
+\newcommand{\violet}[1]{\textcolor{violet}{#1}}
+%\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\green}[1]{\textcolor{OliveGreen}{#1}}
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\baradjust}[2]{\hspace*{#2}\overline{\hspace*{-#2}#1\hspace*{#2}}\hspace*{-#2}}
+\newcommand{\phat}{\ensuremath \hat{p}}
+\newcommand{\varp}{\ensuremath \sqrt{\dfrac{p(1-p)}{n}}}
+\newcommand{\zalpha}{\ensuremath Z_{\alpha/2}}
+\newcommand{\varphat}{\ensuremath \sqrt{\dfrac{\hat{p}(1-\hat{p})}{n}}}
+\newcommand{\comp}[1]{\ensuremath  #1^{\text{C}}}
+\newcommand{\defn}[1]{\textbf{\blue{#1}}:}
+\newcommand{\ith}[1]{\ensuremath #1^{\text{th}}}
+\newcommand{\nd}[1]{\ensuremath #1^{\text{nd}}}
+\newcommand{\rd}[1]{\ensuremath #1^{\text{rd}}}
+\newcommand{\sr}[1]{\ensuremath #1^{\text{st}}}
+\newcommand{\notimplies}{\ensuremath \centernot\implies}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\nb}{\textbf{*N.B. }}
+\newcommand{\ow}{\ensuremath\text{otherwise}}
+\newcommand{\one}{\hspace{1cm}}
+\newcommand{\pxy}{\ensuremath p_{x,y}(x,y)}
+\newcommand{\pmf}[1]{\ensuremath p_{#1}(#1)}
+\newcommand{\for}{\ensuremath \text{for }}
+\newcommand{\pagetop}[1]{\begin{center}\textbf{#1}\end{center}}
+\newcommand{\answer}[1]{\line(1,0){#1}}
+\newcommand{\onev}{\vspace{1cm}}
+\newcommand{\five}{\vspace{.5cm}}
+
+\newcommand{\listexamplesname}{List of Examples}
+\newlistof{example}{eg}{\listexamplesname}
+
+\newcommand{\listdefinitionsname}{List of Definitions}
+\newlistof{definition}{defin}{\listdefinitionsname}
+
+\newcommand{\listformulasname}{List of Formulas}
+\newlistof{formula}{forma}{\listformulasname}
+
+
+\newcommand{\tip}[1]{\begin{tcolorbox}[colframe=yellow!75!black] \textbf{*TIP:} #1\end{tcolorbox}} 
+
+\newcommand{\definition}[3]{%
+	\begin{tcolorbox}[colback=blue!5!white, colframe=blue!75!black, title=\deftn{\label{def:#1}#2} ]%
+		#3%
+	\end{tcolorbox}%
+}
+%\newcommand{\definition}[2]{\begin{tcolorbox}[colback=blue!5!white, colframe=blue!75!black, title=Definition: #1] #2 \end{tcolorbox}}
+
+
+%\newcommand{\formula}[2]{\begin{tcolorbox}[colback=violet!5!white, colframe=violet!75!black, title=Formula: #1] \begin{center} #2 \end{center}\end{tcolorbox}}
+
+\newcommand{\formula}[3]{%
+	\begin{tcolorbox}[colback=violet!5!white, colframe=violet!75!black, title=\forml{\label{form:#1}#2} ]%
+		#3%
+	\end{tcolorbox}
+}
+
+\newcommand{\example}[3]{%
+	\begin{tcolorbox}[colback=orange!5!white, colframe=orange!75!black, title=\exmpl{\label{ex:#1}#2} ]%
+		#3%
+	\end{tcolorbox}%
+}
+
+\newcommand{\practice}[2]{\begin{tcolorbox}  \textbf{Practice Question}: \pract{\label{pq:#1}} #2 \end{tcolorbox}}
+\newcommand{\advanced}[1]{\begin{tcolorbox}[colframe=Lavender!75!black]\textbf{*Advanced Note: }#1\end{tcolorbox}}
+\newcommand{\solution}[2]{\sol{\label{sol:#1} #2}}
+\newcommand{\ontheweb}[1]{\begin{tcolorbox}[colframe=SpringGreen!75!black]\textbf{On The Web}: #1\end{tcolorbox}}
+
+\newcommand{\deftn}[1]{%
+	\refstepcounter{definition}
+	\par\noindent\textbf{Definition \thedefinition. #1}
+	\addcontentsline{defin}{definition}
+	{\protect\numberline{\thedefinition}#1}
+}
+
+\newcommand{\exmpl}[1]{%
+    \refstepcounter{example}
+    \par\noindent\textbf{Example \theexample. #1}
+    \addcontentsline{eg}{example}
+    {\protect\numberline{\theexample}#1}
+}
+
+\newcommand{\forml}[1]{%
+    \refstepcounter{formula}
+    \par\noindent\textbf{Formula \theformula. #1}
+    \addcontentsline{forma}{formula}
+    {\protect\numberline{\theformula}#1}
+}	
+
+\newcommand{\reading}[1]{\begin{tcolorbox}[colframe=BlueViolet!75!black] \textbf{Interesting Reading}:#1\end{tcolorbox}}
+
+
+
+%\newtheorem{prop}{\violet{Proposition}}[section]
+%\newtheorem{result}{\violet{Result}}[section]
+%\theoremstyle{definition}
+%\newtheorem{exmpl}{}
+\newtheorem{sol}{}
+\newtheorem{pract}{}
+%\newtheorem{cor}{\violet{Corollary}}[section]
+%\newtheorem{fact}{\violet{Fact}}[section]

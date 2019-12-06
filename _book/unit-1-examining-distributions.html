@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Unit 1 : Examining Distributions | A Minimal Book Example</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Unit 1 : Examining Distributions | A Minimal Book Example" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Unit 1 : Examining Distributions | A Minimal Book Example" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Yihui Xie" />
+
+
+<meta name="date" content="2019-12-06" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="unit-1-examining-distributions.html"><a href="unit-1-examining-distributions.html"><i class="fa fa-check"></i><b>2</b> Unit 1 : Examining Distributions</a><ul>
+<li class="chapter" data-level="2.1" data-path="unit-1-examining-distributions.html"><a href="unit-1-examining-distributions.html#introduction-what-is-statistics"><i class="fa fa-check"></i><b>2.1</b> Introduction: What is statistics?</a></li>
+<li class="chapter" data-level="2.2" data-path="unit-1-examining-distributions.html"><a href="unit-1-examining-distributions.html#basic-terminology"><i class="fa fa-check"></i><b>2.2</b> Basic Terminology</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Minimal Book Example</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="unit-1-examining-distributions" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> Unit 1 : Examining Distributions</h1>
+<div id="introduction-what-is-statistics" class="section level2">
+<h2><span class="header-section-number">2.1</span> Introduction: What is statistics?</h2>
+<p>Statistics is, in many ways, the science of data. Though popular belief is that it is all about calculating numbers and math, this is not true. It is a wide encompassing discipline that starts before data is even collected and continues on after the numbers have been ``crunched’’.</p>
+<p>Broadly speaking, statistics is a branch of science which deals with collecting, organizing, analyzing, interpreting, summarizing, and presenting data. A key catch phrase of this introductory course is ``Garbage in, garbage out’’. Data means nothing if it is not collected properly or it is not representative of what it is actually measuring.</p>
+<p>The statistician’s job begins once a question has been identified and they need to decide what data could be collected to answer that question. Then they need to physically collect that data in a way that will accurately and responsibly reflect what is really happening. Particularly with large amounts of data, the statistician then needs to find a way to organize the data and store it so that it available in an easily readable format that can be accessed by computers and technology. Then comes the math and analysis where statisticians must pick appropriate techniques. But the numbers themselves are not meaningful until they are interpreted by the statistician so that we know what they say about the problem. While there could be a lot of data, a lot of output, and a lot of statistical talk, at the end of the day, it is someone other than the statistician that needs to use the data so the relevant parts needs to be picked out. Finally, a report must be written and given to the company/government/people who asked the question and they must be able to take practical conclusions away from the numbers and they will rely on the statistician to present it properly.</p>
+<p>The most important thing to take away is that, at the end of the day, data is collected so that someone can use it. Presenting the head of a company with thousands of points of data is not helpful nor is presenting a report laden in statistical jargon. The valuable skill you will hopefully take away from this course is being able to interpret and explain numbers in practical terms that a non-statistician can understand. Keeping this in mind, there are two viewpoints I would always like you to keep in mind as you go through this course.</p>
+<p>Firstly, I would like you to consider the content through the eyes of a statistician. As a statistician, it is your responsibility to ensure you are always reporting your data with clarity, precision, and honesty. You have to tell people where your data came from, how it was collected, make sure all of your graphs are to scale, that they are labeled, that they are sourced correctly and it is lined out in plain English what your data is trying to convey. At the end of the day, someone has to use your data and it is imperative that they can trust your reposting and that they can easily understand your findings to make informed decisions.</p>
+<p>Secondly, I would like you to consider the content through the eyes of a non-statistician who has to use their best judgement on a daily basis to make important life decisions. While I am sure the vast majority of people who take introductory statistics will never have to make an outlier boxplot, interpret a regression line or conduct a hypothesis test after completing their course, there is a much more vital skill the course teaches that you will use nearly every single day of your life. This is the ability to reason whether or not a number sounds feasible, question the integrity of the source, judge if you are being given full disclosure, and decide if the number is reliable. In your life, you will constantly be asked to make decisions based on the best information available to you. People will constantly present you with facts and statistics on the radio, in news reports, in health reports, on social media, etc… This course will teach you how to interpret those numbers and help you ask the right questions and develop the right tools to make sure you’re basing those decisions on solid information.</p>
+</div>
+<div id="basic-terminology" class="section level2">
+<h2><span class="header-section-number">2.2</span> Basic Terminology</h2>
+<p>To begin this course we need to start out by establishing some terminology so that we can properly communicate our ideas to each other.</p>
+<div class="definition">
+
+<div class="definition">
+<span id="def:unnamed-chunk-1" class="definition"><strong>Definition 2.1  (Individual)  </strong></span>An object on which we take a measurement or observation.
+</div>
+</div>
+<p>For example, if we are measuring a person’s heart rate, our unit would be the person. If we are looking for nutrient content in a soil sample, our unit would be the soil. If we are finding the average property value for different cities, our unit would be the city. So units could be people, places, things, etc…</p>
+<p>An important distinction that needs to be made for this course is the difference between samples and populations.</p>
+<div class="definition">
+
+<div class="definition">
+<span id="def:unnamed-chunk-2" class="definition"><strong>Definition 2.2  (Population)  </strong></span>The collection of all individuals or units under consideration.
+</div>
+</div>
+<p>
+<div class="definition">
+
+<div class="definition">
+<span id="def:unnamed-chunk-3" class="definition"><strong>Definition 2.3  (Sample)  </strong></span>A subset of the population from which we obtain data.
+</div>
+</div>
+<p>So from the <span style="color:blue">population</span> of <span style="color:blue">all STAT 1000 students</span> we take a <span style="color:red">sample} of <span style="color:red">ten students from each class</span> to see how many other courses they are taking.</p>
+<p>From the <span style="color:blue">population</span> of <span style="color:blue">all eligible voters in the City of Winnipeg</span> we take a <span style="color:red">sample</span> of <span style="color:red">300 voters</span> to estimate how many people are planning to vote for Sam Katz.</p>
+<p>From the <span style="color:blue">population</span> of <span style="color:blue">all elm tress in Winnipeg</span> we take a <span style="color:red">sample</span> of <span style="color:red">200 trees} to test for dutch elm disease.</p>
+<p>The difference between a population and a statistic is right at the heart of what statistics is all about. We seek to answer questions about populations but usually it is impractical to survey every member of a population because they can be very large. Instead we take samples and collect data from them. The hope is that if we pick a random sample that is  of the population, then any information we collect on the sample will accurately carry over to the entire population.</p>
+<p>\begin{center}
+<img src="population_sample_diagram.png" alt="Relationship of populations to samples" />
+\end{center}</p>
+<p>When describing our units and taking measurements we are assessing variables.</p>
+
+<p>But what we might notice, is that this definition is very broad. There are lots of different types of variables and data. In the voting example, our variable of  had a yes/no response but in the STAT 1000 example, our variable of  had a numeric response. This is a clear indication that there are many different types of data a person might collect. We will categorize our data in to three main groups:</p>
+
+Some examples of quantitative data are:
+
+
+Some examples of categorical and ordinal data are:
+
+
+
+Some examples of categorical and nominal data are:
+
+
+
+<p>Variables can be further described by their distribution:</p>
+
+
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/01-describing-data.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
